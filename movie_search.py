@@ -50,8 +50,7 @@ def search_movies(query, top_n=5):
     """
     global model, movie_embeddings, movies_df
     
-    # Initialize if not already done
-    if model is None or movie_embeddings is None or movies_df is None:
+    if model is None:
         load_data_and_model()
     
     # Encode the search query
