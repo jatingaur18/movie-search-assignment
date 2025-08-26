@@ -23,7 +23,7 @@ This project implements a semantic search engine that can find movies based on p
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/movie-search-assignment.git
+   git clone https://github.com/MinuteHanD/movie-search-assignment.git
    cd movie-search-assignment
    ```
 
@@ -137,6 +137,6 @@ movie-search-assignment/
 
 ## Author
 
-[Your Name Here]  
+[Amritanshu Darbari]  
 Assignment for AI Systems Development - IIIT Naya Raipur  
 Due: August 26, 2025
