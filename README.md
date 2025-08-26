@@ -137,6 +137,7 @@ movie-search-assignment/
 
 ## Author
 
-[Amritanshu Darbari]  
+Amritanshu Darbari
+Roll number : 221000006
 Assignment for AI Systems Development - IIIT Naya Raipur  
 Due: August 26, 2025
