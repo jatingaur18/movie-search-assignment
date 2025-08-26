@@ -134,7 +134,6 @@ movie-search-assignment/
 - ✅ Returns DataFrame with title, plot, and similarity_score
 - ✅ Handles `top_n` parameter correctly
 - ✅ Includes comprehensive unit tests
-- ✅ Well-documented code with comments
 - ✅ Complete Jupyter notebook implementation
 
 ## Author
