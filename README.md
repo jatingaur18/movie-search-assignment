@@ -1,8 +1,8 @@
 # Movie Semantic Search Assignment
 
-![Tests](https://github.com/your-username/movie-search-assignment/workflows/Movie%20Search%20Tests/badge.svg)
-![Notebook Tests](https://github.com/your-username/movie-search-assignment/workflows/Jupyter%20Notebook%20Tests/badge.svg)
-![Performance](https://github.com/your-username/movie-search-assignment/workflows/Performance%20Tests/badge.svg)
+![Tests](https://github.com/MinuteHanD/movie-search-assignment/workflows/Movie%20Search%20Tests/badge.svg)
+![Notebook Tests](https://github.com/MinuteHanD/movie-search-assignment/workflows/Jupyter%20Notebook%20Tests/badge.svg)
+![Performance](https://github.com/MinuteHanD/movie-search-assignment/workflows/Performance%20Tests/badge.svg)
 
 This repository contains my solution for the semantic search on movie plots assignment using SentenceTransformers.
 

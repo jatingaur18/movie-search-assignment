@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.9, 3.10.0, 3.11]
+        python-version: ["3.9", "3.10", "3.11"]
 
     steps:
     # Step 1: Checkout the repository code
@@ -37,16 +37,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pytest pytest-cov  # Additional testing tools
+        pip install -r requirements.txt  # Additional testing tools
     
     # Step 5: Lint code with flake8 (optional but good practice)
     - name: Lint with flake8
       run: |
         pip install flake8
-        # Stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # Exit-zero treats all errors as warnings. GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     
     # Step 6: Run unit tests
@@ -68,19 +65,8 @@ jobs:
         print('✅ All basic functionality tests passed!')
         "
     
-    # Step 8: Generate test coverage report (optional)
     - name: Generate coverage report
       run: |
         pip install coverage
         coverage run -m unittest tests/test_movie_search.py
         coverage report -m
-        coverage xml
-    
-    # Step 9: Upload coverage to Codecov (optional)
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: false
