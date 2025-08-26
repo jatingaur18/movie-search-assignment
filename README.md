@@ -1,6 +1,3 @@
-Here’s a rewritten version of your README, polished for clarity and flow, with your name included instead of the original author:
-
----
 
 # 🎬 Movie Semantic Search Assignment
 
